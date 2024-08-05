@@ -1,0 +1,620 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffff;
+    font-weight: bold;
+    overflow-x: hidden;
+
+
+}
+
+#hm {
+    color: #ffd600;
+}
+
+header>nav>ul>li>a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+
+.blacksec {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: black;
+    transition: 2s ease;
+    animation: 1s intr3 ease forwards;
+    animation-delay: 1.5s;
+}
+
+.cols {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.blacksec>.cols>div {
+    height: 0%;
+    width: 5%;
+    background: #ffd600;
+    margin: 0px 10px;
+    transition: 1s ease;
+}
+
+
+.cols>div:nth-child(1) {
+    animation: inr2 0.9s ease forwards;
+}
+
+.cols>div:nth-child(2) {
+    animation: inr2 0.9s ease forwards;
+}
+
+.cols>div:nth-child(3) {
+    animation: inr1 0.9s ease forwards;
+}
+
+.cols>div:nth-child(4) {
+    animation: inr1 0.9s ease forwards;
+}
+
+/*.cols>div:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.cols>div:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.cols>div:nth-child(3) {
+    animation-delay: 0.2s;
+}*/
+
+@keyframes inr2 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    1% {
+        height: 100%;
+    }
+
+    50% {
+        height: 100%;
+        width: 5%;
+
+        transform: translateY(0%);
+    }
+
+    100% {
+        height: 100%;
+
+
+        transform: translateY(0%);
+    }
+}
+
+@keyframes inr1 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    1% {
+        height: 100%;
+    }
+
+    50% {
+        height: 100%;
+
+
+        transform: translateY(0%);
+    }
+
+    99% {
+        height: 100%;
+
+
+        transform: translateY(0%);
+    }
+
+    100% {
+        height: 100%;
+
+
+        transform: translateY(0%);
+    }
+}
+
+
+@font-face {
+    font-family: MyFont1;
+    src: url("Slowdex.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: MyFont2;
+    src: url('Angkola.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+.cont2 {
+    height: 500px;
+    width: 100%;
+    margin: 0px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont2>div {
+    height: 100%;
+    width: 25%;
+    flex: 1;
+    transition: 0.5s ease;
+}
+
+.cont2>div:hover {
+
+    flex: 3;
+
+}
+
+header>.vst {
+    margin-right: 20px;
+}
+
+header {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255 255 255 / 8%);
+    z-index: 2;
+    background: black;
+
+
+}
+
+.cont2>div:nth-child(1) {
+    background: url('https://www.allrecipes.com/thmb/q-IfK20zxeyp1DgKWhrVp6CQ43w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-89268-triple-dipped-fried-chicken-beauty-4x3-3961ac838ddd41958e7cb9f49376cd68.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cont2>div:nth-child(2) {
+    background: url('https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cont2>div:nth-child(3) {
+    background: url('https://www.moulinex-me.com/medias/?context=bWFzdGVyfHJvb3R8MTQzNTExfGltYWdlL2pwZWd8YUdObEwyaG1aQzh4TlRrMk9EWXlOVGM0TmpreE1DNXFjR2N8MmYwYzQ4YTg0MTgzNmVjYTZkMWZkZWZmMDdlMWFlMjRhOGIxMTQ2MTZkNDk4ZDU3ZjlkNDk2MzMzNDA5OWY3OA');
+    background-size: cover;
+    background-position: center;
+}
+
+.cont2>div:nth-child(4) {
+    background: url('https://www.licious.in/blog/wp-content/uploads/2022/06/shutterstock_1339636625-1-600x600.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sec1>div {
+    height: calc(100% - 70px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.sec1>div>h1 {
+    font-size: 100px;
+    font-family: MyFont1;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.sec1>div>h2 {
+    font-size: 25px;
+    font-family: MyFont1;
+    font-weight: 400;
+    margin-top: -60px;
+
+}
+
+.sec2>h1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: MyFont2;
+}
+
+.sec2>h1>span {
+    color: #ffd600;
+}
+
+nav {
+    display: flex;
+    width: 50%;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    color: #ffff;
+
+    font-weight: bold;
+    font-family: MyFont2;
+
+}
+
+
+img {
+    height: 100%;
+    width: auto;
+}
+
+li {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.sec1 {
+    /* background-image: url("https://images.unsplash.com/photo-1563861019306-9cccb83bdf0c?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+   */
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.chick>img {
+    height: 100%;
+    width: auto;
+    filter: drop-shadow(0px 40px 40px black);
+
+}
+
+.sec2 {
+    background: black;
+    padding: 100px 0px 175px 0px;
+    height: 100%;
+    margin-top: -640px;
+}
+
+.sec3 {
+    padding: 40px 0px 0px 0px;
+    margin-top: -60px;
+    background: black;
+    height: 100%;
+}
+
+.sec3>h1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: MyFont2;
+}
+
+.sec3>h1>span {
+    color: #ffd600;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+
+}
+
+.sec3,
+.sec4,
+.sec5 {
+    background: black;
+}
+
+ul li a.active {
+    color: #ffd600;
+}
+
+ul li.active::before {
+    width: 100%;
+}
+
+li:hover {
+    color: #ffd600;
+}
+
+li>a:hover {
+    color: #ffd600;
+}
+
+
+
+li::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: -3px;
+    background: #ffd600;
+    left: 50%;
+    width: 0%;
+    transform: translateX(-50%);
+
+    transition: all 0.3s ease;
+}
+
+li:hover::before {
+
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ots {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(10) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 0%, 1)'/><path d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002'  stroke-width='1' stroke='hsla(50, 100%, 50%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    border: 3px solid #ffd600;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ots>div {
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    background: #ffd600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+}
+
+.vst {
+    background: transparent;
+    padding: 5px 25px;
+    color: white;
+    font-family: MyFont1;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: color 0.25s linear;
+    animation: inr 1s linear;
+}
+
+@keyframes inr {
+    0% {
+        opacity: 0;
+        margin-top: 100px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+
+}
+
+.vst:hover {
+    color: #ffd600;
+    border-color: #ffd600;
+}
+
+.main>div:nth-child(1)>div:nth-child(1) {
+    background-image: url(https://th-i.thgim.com/public/life-and-style/food/49gm3h/article24310978.ece/alternates/FREE_1200/02MPTICKLETRUCKICECREAM1);
+
+}
+
+.main>div:nth-child(2)>div:nth-child(1) {
+    background-image: url("https://en-media.thebetterindia.com/uploads/2021/03/Bharat.jpg");
+
+}
+
+.main>div:nth-child(3)>div:nth-child(1) {
+    background-image: url("https://images.deccanchronicle.com/0796b29cb6c12b4069f11a73f86a75f5e9b72836-tc-img-preview.jpg");
+
+}
+
+.main>div:nth-child(4)>div:nth-child(1) {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKBMlx_o42L8OyIOXu4_lX6SjOLTjYuSXocw&s");
+
+}
+
+.main>div>div:nth-child(2) {
+    display: none;
+    background-color: #ffd600;
+    transform: scale(0);
+    font-family: 'MyFont1';
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-wrapper .image-list {
+    display: flex;
+    gap: 18px;
+    overflow-x: scroll;
+}
+
+.slider-wrapper .image-list .image-item {
+    width: 33.33%;
+    /* Adjusted width for three images in the viewport */
+    height: 400px;
+    overflow: hidden;
+    flex: none;
+    /* Prevent the images from shrinking */
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.slider-wrapper .image-list .image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-wrapper .image-list .image-item h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    height: 100%;
+    font-family: MyFont1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+}
+
+.slider-wrapper .image-list .image-item:hover h3 {
+    opacity: 1;
+}
+
+.container1 {
+    max-width: 1200px;
+    width: 95%;
+    position: relative;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+
+}
+
+.image-list::-webkit-scrollbar {
+    height: 5px;
+    background: #ffffff1c;
+    border-radius: 20px;
+}
+
+.image-list::-webkit-scrollbar-thumb {
+    height: 5px;
+    background: #ffd600;
+    border-radius: 20px;
+}
+
+.container2 {
+    display: flex;
+}
+
+.cards {
+    position: relative;
+    height: 500px;
+    width: 350px;
+    border-radius: 10px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.cards:hover {
+    cursor: pointer;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.cards:hover .desc {
+    height: 275px;
+    border-top: 5px solid #ffd600;
+    background-color: black;
+}
+
+.cards:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cards:hover img {
+    transform: scale(1.1) rotate(+3deg);
+}
+
+.container2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.desc {
+    height: 70px;
+    position: absolute;
+    width: 350px;
+    padding: 6px;
+    bottom: 0px;
+    background: rgba(27, 27, 27, 0.5);
+    color: white;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.container2 h1 {
+    margin: 9px;
+    font-size: 30px;
+    font-family: MyFont1;
+}
+
+.container2 p {
+    font-size: 16px;
+    margin: 15px;
+    visibility: hidden;
+    opacity: 0;
+    font-family: MyFont2;
+    color: #ffd600;
+}
